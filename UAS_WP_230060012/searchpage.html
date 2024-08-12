@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results - Technology Site</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="wrapper_230060012">
+        <header>
+            <div class="header_230060012">
+                <div class="header-content_230060012">
+            <div class="logo_230060012">
+                <img src="img/logo.jpg" alt="Logo">
+            </div>
+            <h1 class="site-title_230060012" style="color:white">Techno.</h1>
+            </div>
+            </div>
+            <nav class="navbar_230060012">
+                <ul class="nav-links_230060012">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown_230060012">
+                        <a href="#" class="dropbtn_230060012">Product</a>
+                        <div class="dropdown-content_230060012">
+                            <a href="product1.html">Product 1</a>
+                            <a href="product2.html">Product 2</a>
+                            <a href="product3.html">Product 3</a>
+                            <a href="product4.html">Product 4</a>
+                        </div>
+                    </li>
+                    <li><a href="services.html">Service</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="history.html">History</a></li>
+                </ul>
+                <div class="search-login_230060012">
+                    <div class="search-container_230060012">
+                        <input type="text" id="search-bar" class="search-bar_230060012" placeholder="Search...">
+                        <a href="searchpage.html"><i class="fas fa-search search-icon_230060012"></i></a>
+                    </div>
+                    <div class="icon-container_230060012">
+                        <a href="cart.html"><i class="fas fa-shopping-cart cart-icon_230060012"></i></a>
+                    </div>
+                    <a href="login.html"><button class="login-btn_230060012">Login</button></a>
+                    <a href="register.html"><button class="register-btn_230060012">Register</button></a>
+                </div>
+                <div class="menu-toggle_230060012" id="menu-toggle_230060012">
+                    <div class="bar_230060012"></div>
+                    <div class="bar_230060012"></div>
+                    <div class="bar_230060012"></div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="search-results_230060012">
+                <h1>Search Results</h1>
+                <p>Results for: <strong id="search-query">"Example Query"</strong></p>
+                
+                <div id="results_230060012" class="results_230060012">
+                    
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Technology Site. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        const data = [
+            { title: 'Introduction to JavaScript', description: 'Learn the basics of JavaScript, including syntax and common functions.' },
+            { title: 'Advanced CSS Techniques', description: 'Explore advanced CSS techniques and how to use them in your projects.' },
+            { title: 'Understanding Web APIs', description: 'An in-depth look at how web APIs work and how to use them effectively.' },
+            { title: 'Building Responsive Websites', description: 'Guidelines and techniques for creating responsive websites that work on all devices.' }
+        ];
+
+        function getQueryParam(param) {
+            const params = new URLSearchParams(window.location.search);
+            return params.get(param);
+        }
+
+        function displayResults(query) {
+            const resultsContainer = document.getElementById('results_230060012');
+            const filteredData = data.filter(item => item.title.toLowerCase().includes(query.toLowerCase()));
+            const queryElement = document.getElementById('search-query');
+            queryElement.textContent = query;
+
+            if (filteredData.length > 0) {
+                filteredData.forEach(item => {
+                    const resultItem = document.createElement('article');
+                    resultItem.className = 'result-item_230060012';
+                    resultItem.innerHTML = `
+                        <h2>${item.title}</h2>
+                        <p>${item.description}</p>
+                        <a href="#">Read More</a>
+                    `;
+                    resultsContainer.appendChild(resultItem);
+                });
+            } else {
+                resultsContainer.innerHTML = '<p>No results found.</p>';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const query = getQueryParam('q') || '';
+            displayResults(query);
+        });
+    </script>
+</body>
+</html>

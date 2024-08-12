@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product - Technology Site</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .category-container_230060012 {
+            margin: 20px;
+        }
+
+        .category_230060012 {
+            cursor: pointer;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            text-align: left;
+            width: 100%;
+            display: block;
+        }
+
+        .category_230060012:hover {
+            background-color: #0056b3;
+        }
+
+        .category-content_230060012 {
+            display: none;
+            margin: 10px 0;
+        }
+
+        .category-content_230060012 table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .category-content_230060012 th, .category-content_230060012 td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .category-content_230060012 th {
+            background-color: #f4f4f4;
+        }
+
+        .category-content_230060012 tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .category-content_230060012 tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper_230060012">
+        <header>
+            <div class="header_230060012">
+                <div class="header-content_230060012">
+            <div class="logo_230060012">
+                <img src="img/logo.jpg" alt="Logo">
+            </div>
+            <h1 class="site-title_230060012" style="color:white">Techno.</h1>
+            </div>
+            </div>
+            <nav class="navbar_230060012">
+                <ul class="nav-links_230060012">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown_230060012">
+                        <a href="#" class="dropbtn_230060012">Product</a>
+                        <div class="dropdown-content_230060012">
+                            <a href="product1.html">Product 1</a>
+                            <a href="product2.html">Product 2</a>
+                            <a href="product3.html">Product 3</a>
+                            <a href="product4.html">Product 4</a>
+                        </div>
+                    </li>
+                    <li><a href="services.html">Service</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="history.html">History</a></li>
+                </ul>
+                <div class="search-login_230060012">
+                    <div class="search-container_230060012">
+                        <input type="text" id="search-bar" class="search-bar_230060012" placeholder="Search...">
+                        <a href="searchpage.html"><i class="fas fa-search search-icon_230060012"></i></a>
+                    </div>
+                    <div class="icon-container_230060012">
+                        <a href="cart.html"><i class="fas fa-shopping-cart cart-icon_230060012"></i></a>
+                    </div>
+                    <a href="login.html"><button class="login-btn_230060012">Login</button></a>
+                    <a href="register.html"><button class="register-btn_230060012">Register</button></a>
+                </div>
+                <div class="menu-toggle_230060012" id="menu-toggle_230060012">
+                    <div class="bar_230060012"></div>
+                    <div class="bar_230060012"></div>
+                    <div class="bar_230060012"></div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="content_230060012">
+                <h1>Our Products</h1>
+                <p>Explore our range of innovative technology products designed to enhance your experience and efficiency. From the latest gadgets to cutting-edge software, we offer a diverse selection to meet your needs.</p>
+
+                <div class="category-container_230060012">
+                    <button class="category_230060012" onclick="toggleCategory('category1')">Category 1</button>
+                    <div id="category1" class="category-content_230060012">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Description</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>TechXplorer Pro</td>
+                                    <td>Feature-rich gadget for tech enthusiasts.</td>
+                                    <td>$299</td>
+                                </tr>
+                                <tr>
+                                    <td>TechXpert Max</td>
+                                    <td>High-performance gadget for professionals.</td>
+                                    <td>$399</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <button class="category_230060012" onclick="toggleCategory('category2')">Category 2</button>
+                    <div id="category2" class="category-content_230060012">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Description</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>SoftWare Pro</td>
+                                    <td>Innovative software solution.</td>
+                                    <td>$199</td>
+                                </tr>
+                                <tr>
+                                    <td>DevTool Elite</td>
+                                    <td>Cutting-edge tool for developers.</td>
+                                    <td>$249</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <button class="category_230060012" onclick="toggleCategory('category3')">Category 3</button>
+                    <div id="category3" class="category-content_230060012">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Description</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>SmartTech Ultra</td>
+                                    <td>Smart device with advanced features.</td>
+                                    <td>$499</td>
+                                </tr>
+                                <tr>
+                                    <td>SmartTech Accessory</td>
+                                    <td>High-tech accessory for enthusiasts.</td>
+                                    <td>$199</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <button class="category_230060012" onclick="toggleCategory('category4')">Category 4</button>
+                    <div id="category4" class="category-content_230060012">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Description</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>AccessoryXtreme 1</td>
+                                    <td>High-quality accessory for daily use.</td>
+                                    <td>$99</td>
+                                </tr>
+                                <tr>
+                                    <td>AccessoryXtreme 2</td>
+                                    <td>Premium accessory for tech enthusiasts.</td>
+                                    <td>$149</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Technology Site. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        function toggleCategory(id) {
+            var content = document.getElementById(id);
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

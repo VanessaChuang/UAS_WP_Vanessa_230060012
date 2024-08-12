@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product 2 - Technology Site</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .category-container_230060012 {
+            margin: 20px;
+        }
+
+        .category_230060012 {
+            cursor: pointer;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            text-align: left;
+            width: 100%;
+            display: block;
+        }
+
+        .category_230060012:hover {
+            background-color: #0056b3;
+        }
+
+        .category-content_230060012 {
+            display: none;
+            margin: 10px 0;
+        }
+
+        .category-content_230060012 table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .category-content_230060012 th, .category-content_230060012 td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .category-content_230060012 th {
+            background-color: #f4f4f4;
+        }
+
+        .category-content_230060012 tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .category-content_230060012 tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper_230060012">
+        <header>
+            <div class="header_230060012">
+                <div class="header-content_230060012">
+                    <div class="logo_230060012">
+                        <img src="img/logo.jpg" alt="Logo">
+                    </div>
+                    <h1 class="site-title_230060012" style="color:white">Techno.</h1>
+                </div>
+            </div>
+            <nav class="navbar_230060012">
+                <ul class="nav-links_230060012">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown_230060012">
+                        <a href="#" class="dropbtn_230060012">Product</a>
+                        <div class="dropdown-content_230060012">
+                            <a href="product1.html">Product 1</a>
+                            <a href="product2.html">Product 2</a>
+                            <a href="product3.html">Product 3</a>
+                            <a href="product4.html">Product 4</a>
+                        </div>
+                    </li>
+                    <li><a href="services.html">Service</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="history.html">History</a></li>
+                </ul>
+                <div class="search-login_230060012">
+                    <div class="search-container_230060012">
+                        <input type="text" id="search-bar" class="search-bar_230060012" placeholder="Search...">
+                        <a href="searchpage.html"><i class="fas fa-search search-icon_230060012"></i></a>
+                    </div>
+                    <div class="icon-container_230060012">
+                        <a href="cart.html"><i class="fas fa-shopping-cart cart-icon_230060012"></i></a>
+                    </div>
+                    <a href="login.html"><button class="login-btn_230060012">Login</button></a>
+                    <a href="register.html"><button class="register-btn_230060012">Register</button></a>
+                </div>
+                <div class="menu-toggle_230060012" id="menu-toggle_230060012">
+                    <div class="bar_230060012"></div>
+                    <div class="bar_230060012"></div>
+                    <div class="bar_230060012"></div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="content_230060012">
+                <h1>Our Software Tools</h1>
+                <p>Discover our latest software tools designed to enhance productivity and development efficiency. From comprehensive suites to specialized tools, find the perfect solution for your needs.</p>
+
+                <div class="category-container_230060012">
+                    <!-- Software Tools -->
+                    <button class="category_230060012" onclick="toggleCategory('softwareTools')">Software Tools</button>
+                    <div id="softwareTools" class="category-content_230060012">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Description</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>CodeMaster Suite</td>
+                                    <td>A comprehensive software suite for advanced coding and development tasks.</td>
+                                    <td>$219</td>
+                                </tr>
+                                <tr>
+                                    <td>DevGenius Pro</td>
+                                    <td>An innovative tool designed to streamline the development process with advanced features.</td>
+                                    <td>$279</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Productivity Tools -->
+                    <button class="category_230060012" onclick="toggleCategory('productivityTools')">Productivity Tools</button>
+                    <div id="productivityTools" class="category-content_230060012">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Description</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>WorkSmart Pro</td>
+                                    <td>An all-in-one productivity tool for project management and collaboration.</td>
+                                    <td>$159</td>
+                                </tr>
+                                <tr>
+                                    <td>TaskMaster</td>
+                                    <td>Advanced task management software with integration options for multiple platforms.</td>
+                                    <td>$129</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Design Software -->
+                    <button class="category_230060012" onclick="toggleCategory('designSoftware')">Design Software</button>
+                    <div id="designSoftware" class="category-content_230060012">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Description</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>DesignMaster Suite</td>
+                                    <td>A powerful design suite with tools for graphic, web, and UI design.</td>
+                                    <td>$349</td>
+                                </tr>
+                                <tr>
+                                    <td>PixelPerfect</td>
+                                    <td>High-end image editing software with advanced features for professional designers.</td>
+                                    <td>$229</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Security Software -->
+                    <button class="category_230060012" onclick="toggleCategory('securitySoftware')">Security Software</button>
+                    <div id="securitySoftware" class="category-content_230060012">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Description</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>SecureShield</td>
+                                    <td>Comprehensive antivirus and anti-malware software for complete protection.</td>
+                                    <td>$99</td>
+                                </tr>
+                                <tr>
+                                    <td>PrivacyGuard Pro</td>
+                                    <td>Advanced privacy protection tool with real-time threat detection and data encryption.</td>
+                                    <td>$139</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Technology Site. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        function toggleCategory(id) {
+            var content = document.getElementById(id);
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

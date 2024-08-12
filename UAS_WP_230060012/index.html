@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology Site</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .search-container_230060012 {
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        
+        .search-bar_230060012 {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 200px;
+        }
+        
+        .icon-container_230060012 {
+            display: flex;
+            align-items: center;
+            margin: 0 10px;
+        }
+        
+        .search-icon_230060012 {
+            font-size: 16px;
+            color: #333;
+        }
+
+        .cart-icon_230060012 {
+            font-size: 16px;
+            color: #ffffff;
+        }
+        
+        .cart-icon_230060012 {
+            margin-left: 10px;
+        }
+        
+        .search-icon_230060012 {
+            margin-right: 10px;
+        }
+        
+        .promotion-table_230060012 {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .promotion-table_230060012 th, .promotion-table_230060012 td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        
+        .promotion-table_230060012 th {
+            background-color: #f4f4f4;
+        }
+        
+        .promotion-table_230060012 tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        .promotion-table_230060012 tr:hover {
+            background-color: #f1f1f1;
+        }
+        
+        .buy-now-btn_230060012 {
+            display: inline-block;
+            padding: 8px 12px;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+        
+        .buy-now-btn_230060012:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper_230060012">
+        <header>
+            <div class="header_230060012">
+                <div class="header-content_230060012">
+                    <div class="logo_230060012">
+                        <img src="img/logo.jpg" alt="Logo">
+                    </div>
+                    <h1 class="site-title_230060012" style="color:white">Techno.</h1>
+                </div>
+            </div>
+            <nav class="navbar_230060012">
+                <ul class="nav-links_230060012">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown_230060012">
+                        <a href="#" class="dropbtn_230060012">Product</a>
+                        <div class="dropdown-content_230060012">
+                            <a href="product1.html">Product 1</a>
+                            <a href="product2.html">Product 2</a>
+                            <a href="product3.html">Product 3</a>
+                            <a href="product4.html">Product 4</a>
+                        </div>
+                    </li>
+                    <li><a href="services.html">Service</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="history.html">History</a></li>
+                </ul>
+                <div class="search-login_230060012" style="display: flex; align-items: center;">
+                    <div class="search-container_230060012">
+                        <input type="text" id="search-bar" class="search-bar_230060012" placeholder="Search...">
+                        <a href="searchpage.html"><i class="fas fa-search search-icon_230060012"></i></a>
+                    </div>
+                    <div class="icon-container_230060012">
+                        <a href="cart.html"><i class="fas fa-shopping-cart cart-icon_230060012"></i></a>
+                    </div>
+                    
+                    <a href="login.html"><button class="login-btn_230060012">Login</button></a>
+                    <a href="register.html"><button class="register-btn_230060012">Register</button></a>
+                </div>
+                <div class="menu-toggle_230060012" id="menu-toggle_230060012">
+                    <div class="bar_230060012"></div>
+                    <div class="bar_230060012"></div>
+                    <div class="bar_230060012"></div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="slideshow_230060012">
+                <div class="slides_230060012">
+                    <div class="slide fade">
+                        <img src="img/slide1.jpg" alt="Slide 1">
+                        <div class="caption_230060012">Discover the Future of AI: Transforming Industries with Cutting-Edge Technology</div>
+                    </div>
+                    <div class="slide fade">
+                        <img src="img/slide2.jpg" alt="Slide 2">
+                        <div class="caption_230060012">Unleashing Quantum Computing: Solving Complex Problems at Lightning Speed</div>
+                    </div>
+                    <div class="slide fade">
+                        <img src="img/slide3.jpg" alt="Slide 3">
+                        <div class="caption_230060012">5G Connectivity: Revolutionizing Communication with Unprecedented Speeds</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content_230060012">
+                <h1>Welcome to Our Technology Site</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+
+                <div class="promotion-table-container_230060012">
+                    <h2>Featured Promotions</h2>
+                    <table class="promotion-table_230060012">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Description</th>
+                                <th>Price</th>
+                                <th>Discount</th>
+                                <th>Buy Now</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Product 1</td>
+                                <td>High-quality tech product with amazing features.</td>
+                                <td>$299.99</td>
+                                <td>10% off</td>
+                                <td><a href="cart.html" class="buy-now-btn_230060012">Buy Now</a></td>
+                            </tr>
+                            <tr>
+                                <td>Product 2</td>
+                                <td>Innovative gadget that simplifies your life.</td>
+                                <td>$199.99</td>
+                                <td>15% off</td>
+                                <td><a href="cart.html" class="buy-now-btn_230060012">Buy Now</a></td>
+                            </tr>
+                            <tr>
+                                <td>Product 3</td>
+                                <td>Top-of-the-line device with cutting-edge technology.</td>
+                                <td>$399.99</td>
+                                <td>5% off</td>
+                                <td><a href="cart.html" class="buy-now-btn_230060012">Buy Now</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="news-section_230060012">
+                    <h2>Latest Technology News</h2>
+                    <div class="card-container_230060012">
+                        <div class="card_230060012">
+                            <img src="img/news1.jpg" alt="AI Technology" class="card-img_230060012">
+                            <div class="card-body_230060012">
+                                <h3 class="card-title_230060012">New AI Technology Revolutionizes Industry</h3>
+                                <p class="card-text_230060012">In a groundbreaking development, new AI technology is set to transform various industries by enhancing automation and efficiency. Learn more about how this innovation will impact the future of work and everyday life.</p>
+                                <a href="#" class="btn btn-primary_230060012">Read More</a>
+                            </div>
+                        </div>
+                        <div class="card_230060012">
+                            <img src="img/news2.jpg" alt="Quantum Computing" class="card-img_230060012">
+                            <div class="card-body_230060012">
+                                <h3 class="card-title_230060012">Breakthrough in Quantum Computing</h3>
+                                <p class="card-text_230060012">Researchers have achieved a significant milestone in quantum computing, bringing us closer to solving complex problems faster than ever before. Discover the implications of this breakthrough for the technology landscape.</p>
+                                <a href="#" class="btn btn-primary_230060012">Read More</a>
+                            </div>
+                        </div>
+                        <div class="card_230060012">
+                            <img src="img/news3.jpg" alt="5G Networks" class="card-img_230060012">
+                            <div class="card-body_230060012">
+                                <h3 class="card-title_230060012">5G Networks Expanding Globally</h3>
+                                <p class="card-text_230060012">The rollout of 5G networks is accelerating, promising faster internet speeds and improved connectivity worldwide. Explore how this new technology is reshaping the telecommunications industry and impacting users around the globe.</p>
+                                <a href="#" class="btn btn-primary_230060012">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Technology Site. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        document.getElementById('search-bar').addEventListener('input', function() {
+            const query = this.value;
+            if (query.length < 3) {
+                document.getElementById('search-results').innerHTML = '';
+                return;
+            }
+
+            fetch('search-handler.php?query=' + encodeURIComponent(query))
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('search-results').innerHTML = data;
+                })
+                .catch(error => console.error('Error fetching search results:', error));
+        });
+    </script>
+</body>
+</html>

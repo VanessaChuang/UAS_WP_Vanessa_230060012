@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Technology Site</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<style>
+.about-intro_230060012 {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about-intro-content_230060012 {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-intro_230060012 h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-intro_230060012 p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.accordion_230060012 {
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.accordion-item_230060012 {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.accordion-header_230060012 {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    text-align: left;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.accordion-header_230060012:hover {
+    background-color: #0056b3;
+}
+
+.accordion-content_230060012 {
+    padding: 15px;
+    display: none;
+    background-color: #f1f1f1;
+    font-size: 1rem;
+    color: #333;
+}
+
+.accordion-header_230060012.active_230060012 + .accordion-content_230060012 {
+    display: block;
+}
+
+</style>
+<body>
+    <div class="wrapper_230060012">
+        <header>
+            <div class="header_230060012">
+                <div class="header-content_230060012">
+                    <div class="logo_230060012">
+                        <img src="img/logo.jpg" alt="Logo">
+                    </div>
+                    <h1 class="site-title_230060012" style="color:white">Techno.</h1>
+                </div>
+            </div>
+            <nav class="navbar_230060012">
+                <ul class="nav-links_230060012">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown_230060012">
+                        <a href="#" class="dropbtn_230060012">Product</a>
+                        <div class="dropdown-content_230060012">
+                            <a href="product1.html">Product 1</a>
+                            <a href="product2.html">Product 2</a>
+                            <a href="product3.html">Product 3</a>
+                            <a href="product4.html">Product 4</a>
+                        </div>
+                    </li>
+                    <li><a href="services.html">Service</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="search-login_230060012">
+                    <div class="search-container_230060012">
+                        <input type="text" id="search-bar" class="search-bar_230060012" placeholder="Search...">
+                        <a href="searchpage.html"><i class="fas fa-search search-icon_230060012"></i></a>
+                    </div>
+                    <div class="icon-container_230060012">
+                        <a href="cart.html"><i class="fas fa-shopping-cart cart-icon_230060012"></i></a>
+                    </div>
+                    <a href="login.html"><button class="login-btn_230060012">Login</button></a>
+                    <a href="register.html"><button class="register-btn_230060012">Register</button></a>
+                </div>
+                <div class="menu-toggle_230060012" id="menu-toggle_230060012">
+                    <div class="bar_230060012"></div>
+                    <div class="bar_230060012"></div>
+                    <div class="bar_230060012"></div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="about-intro_230060012">
+                <div class="about-intro-content_230060012">
+                    <h1>About Us</h1>
+                    <p>Welcome to Techno, your go-to source for the latest and greatest in technology. Our mission is to provide accurate, reliable, and cutting-edge information to help you stay informed and make the best decisions for your technology needs.</p>
+                    <p>Our team is passionate about technology and dedicated to delivering high-quality content and services. Whether you're interested in in-depth reviews, expert opinions, or the latest tech news, we're here to provide you with valuable insights and updates.</p>
+                </div>
+            </section>
+
+            <section class="about-details_230060012">
+                <div class="accordion_230060012">
+                    <div class="accordion-item_230060012">
+                        <button class="accordion-header_230060012">Our Mission</button>
+                        <div class="accordion-content_230060012">
+                            <p>Our mission is to harness the power of technology to create innovative solutions that enhance the lives of our users. We aim to lead the industry in providing comprehensive and insightful technology content.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item_230060012">
+                        <button class="accordion-header_230060012">Our Team</button>
+                        <div class="accordion-content_230060012">
+                            <p>Our team consists of a diverse group of technology enthusiasts and experts. Together, we work to bring you the best technology solutions and up-to-date information. Our collective expertise ensures that we deliver top-notch content and services.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item_230060012">
+                        <button class="accordion-header_230060012">Our History</button>
+                        <div class="accordion-content_230060012">
+                            <p>Founded in 2024, Techno has quickly grown to become a trusted name in the technology space. From our humble beginnings, we have expanded our reach and influence, consistently focusing on innovation and quality.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Technology Site. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var acc = document.getElementsByClassName('accordion-header_230060012');
+            
+            for (var i = 0; i < acc.length; i++) {
+                acc[i].addEventListener('click', function() {
+                    this.classList.toggle('active_230060012');
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === 'block') {
+                        panel.style.display = 'none';
+                    } else {
+                        panel.style.display = 'block';
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Technology Site</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<style>
+    .auth-form_230060012 {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    }
+
+    .auth-form_230060012 h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .auth-form_230060012 form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .auth-form_230060012 label {
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .auth-form_230060012 input {
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .auth-form_230060012 button {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .auth-form_230060012 button:hover {
+        background-color: #0056b3;
+    }
+
+    .auth-form_230060012 p {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .auth-form_230060012 a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+    .auth-form_230060012 a:hover {
+        text-decoration: underline;
+    }
+
+    .social-login_230060012 {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .social-login_230060012 p {
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .social-btn_230060012 {
+        display: inline-block;
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        font-size: 16px;
+        margin: 5px 0;
+    }
+
+    .google-btn_230060012 {
+        background-color: #e74d3f;
+    }
+
+    .google-btn_230060012:hover {
+        background-color: #c1351d;
+    }
+
+    .facebook-btn_230060012 {
+        background-color: #2b5dc1;
+    }
+
+    .facebook-btn_230060012:hover {
+        background-color: #4473cc;
+    }
+</style>
+<body>
+    <div class="wrapper_230060012">
+        <header>
+            <div class="header_230060012">
+                <div class="header-content_230060012">
+            <div class="logo_230060012">
+                <img src="img/logo.jpg" alt="Logo">
+            </div>
+            <h1 class="site-title_230060012" style="color:white">Techno.</h1>
+            </div>
+            </div>
+            <nav class="navbar_230060012">
+                <ul class="nav-links_230060012">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="services.html">Service</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="history.html">History</a></li>
+                </ul>
+                <div class="menu-toggle_230060012" id="menu-toggle_230060012">
+                    <div class="bar_230060012"></div>
+                    <div class="bar_230060012"></div>
+                    <div class="bar_230060012"></div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="auth-form_230060012">
+                <h1>Register</h1>
+                <form action="register-handler.php" method="post">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+
+                    <a href="login.html" style="color: white"><button type="submit">Register</a></button>
+                </form>
+                <p>Already have an account? <a href="login.html">Login here</a></p>
+
+                <div class="social-login_230060012">
+                    <p>Or register with</p>
+                    <button class="social-btn_230060012 google-btn_230060012" onclick="window.open('https://accounts.google.com/o/oauth2/auth?client_id=YOUR_GOOGLE_CLIENT_ID&redirect_uri=YOUR_REDIRECT_URI&response_type=token', '_blank', 'width=500,height=600')">
+                        <i class="fab fa-google"></i> Register with Google
+                    </button>
+                    <button class="social-btn_230060012 facebook-btn_230060012" onclick="window.open('https://www.facebook.com/v12.0/dialog/oauth?client_id=YOUR_FACEBOOK_APP_ID&redirect_uri=YOUR_REDIRECT_URI&response_type=token', '_blank', 'width=500,height=600')">
+                        <i class="fab fa-facebook-f"></i> Register with Facebook
+                    </button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Technology Site. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
